@@ -4,7 +4,7 @@ export function SocialLinks() {
   return (
     <div className="w-[48px] h-[363px] flex flex-col items-center">
 
-      <span className="text-[14px] text-[#2B2B2B] font-bold mb-6">
+      <span className="text-[14px] text-titlecolor  font-bold mb-6">
         Links
       </span>
       

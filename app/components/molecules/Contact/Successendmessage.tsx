@@ -22,10 +22,8 @@ export function Successendmessage ({ setIsSubmitted }: GeneralMessageProps) {
       </p>
 
 
-      <Button
-        variant="outline"
-        className="mt-4"
-        onClick={() => setIsSubmitted(false)}
+      <Button variant="outline"  className="mt-4"
+       onClick={() => setIsSubmitted(false)}
       >
         Send another message
       </Button>

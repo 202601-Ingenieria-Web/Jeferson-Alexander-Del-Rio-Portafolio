@@ -7,6 +7,7 @@ import { ContactSection } from "./components/organisms/Contact/ContactSection";
 import { Sociallink } from "./components/organisms/SocialLink/Sociallink";
 import { Footer } from "./components/organisms/Footer/Footer";
 
+
 export default function Home() {
   return (
     <div className="flex">

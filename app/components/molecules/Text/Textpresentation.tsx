@@ -1,6 +1,8 @@
 "use client";
-import { cn } from "@/utils/Cn";
-
+/**
+ * Componente de presentación de sección.
+ * Muestra título + descripción con estilo consistente en toda la app.
+ */
 
 interface KnowledgeCardProps {
   title: string

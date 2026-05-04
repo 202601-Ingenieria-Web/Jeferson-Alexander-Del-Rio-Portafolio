@@ -2,7 +2,7 @@
 export function ProfileInfo() {
   return (
     <div
-      className="w-[80%] max-w-[260px] min-w-[150px] space-y-2 text-[clamp(13px,2vw,14px)] text-[#2B2B2B]">
+      className="w-[80%] max-w-[260px] min-w-[150px] space-y-2 text-[clamp(13px,2vw,14px)] text-titlecolor">
         
       <div className="flex justify-between gap-4">
         <span>Age:</span>

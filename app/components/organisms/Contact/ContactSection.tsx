@@ -1,13 +1,20 @@
 "use client";
 
-
 import { useState } from "react";
 import { Send } from "lucide-react";
-import { SectionTitle } from "@/app/components/molecules/Contact/SectionTitle";
 import { ContactFormField } from "@/app/components/molecules/Contact/ContactFormField";
 import { Button } from "@/app/components/atoms/buttons/Button";
 import { GeneralMessage } from "@/app/components/molecules/Contact/GeneralMessage";
 import { Successendmessage } from "../../molecules/Contact/Successendmessage";
+
+
+/**
+ * Sección de contacto con formulario controlado.
+ * 
+ * - Maneja validación de campos (nombre, email, mensaje)
+ * - Simula o envía datos al backend
+ * - Muestra mensaje de éxito al enviar
+ */
 
 
 interface FormData {
@@ -136,12 +143,7 @@ export function ContactSection() {
                   error={errors.message}
                   required
                 />
-                <Button
-                  type="submit"
-                  size="lg"
-                  className="w-full"
-                  disabled={isSubmitting}
-                >
+                <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
                   {isSubmitting ? (
                     "Sending..."
                   ) : (

@@ -53,7 +53,7 @@ const projectData = [
 
 export function MyProjects() {
   return (
-    <section id="projects" className="w-full max-w-[998px]">
+    <section id="projects" className="w-full   mx-auto ">
       
       
       <TextPresentation
@@ -63,19 +63,21 @@ export function MyProjects() {
         and modern technologies." />
 
      
-      <div className="flex flex-col gap-6 max-w-[970px] mx-auto">
+      <div className="w-full   mx-auto  flex  flex-col">
         
 
-        <div className="flex flex-col items-center gap-5 md:grid md:grid-cols-3 md:gap-5">
-              {projectData.map((item) => (
-                <Projectcard
-                  key={item.title}
-                  image={item.image}
-                  title={item.title}
-                  description={item.description}
-                  href={item.href}
-                />
-              ))}
+        <div className=" flex flex-wrap justify-center gap-6">
+          {projectData.map((item) => (
+            <div
+              key={item.title}>
+              <Projectcard
+                image={item.image}
+                title={item.title}
+                description={item.description}
+                href={item.href}
+              />
+            </div>
+          ))}
         </div>
 
 

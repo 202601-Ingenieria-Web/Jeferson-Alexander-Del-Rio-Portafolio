@@ -20,17 +20,8 @@ interface ContactFormFieldProps {
 }
 
 
-export function ContactFormField({
-  id,
-  label,
-  type = "text",
-  placeholder,
-  value,
-  onChange,
-  error,
-  className,
-  required,
-}: ContactFormFieldProps) {
+export function ContactFormField({ id, label, type = "text", placeholder, value,
+  onChange, error, className, required,}: ContactFormFieldProps) {
   return (
     <div className={cn("space-y-2", className)}>
 

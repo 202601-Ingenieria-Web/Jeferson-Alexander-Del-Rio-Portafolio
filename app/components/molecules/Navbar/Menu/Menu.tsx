@@ -4,22 +4,8 @@ import Link from 'next/dist/client/link'
 
 const Index = () => {
   return (
-    <nav
-      className="
-        w-full
-        max-w-[700px]
-        mx-auto
-        flex
-        flex-col
-        sm:flex-row
-        flex-wrap
-        items-center
-        justify-center
-        gap-3
-        transition-colors
-        hover:text-foreground
-      "
-    >
+    <nav className=" w-full max-w-[700px] mx-auto flex flex-col sm:flex-row flex-wrap items-center justify-center gap-3
+        transition-colors hover:text-foreground " >
       <Button asChild variant="default" className="w-full sm:w-auto">
         <Link href="#knowledge">Knowledge</Link>
       </Button>

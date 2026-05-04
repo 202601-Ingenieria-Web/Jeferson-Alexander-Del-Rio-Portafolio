@@ -40,27 +40,29 @@ const knowledgeData = [
 
 export function MyKnowledge() {
   return (
-    <section id="knowledge" className="w-full max-w-[998px]" >
+    <section id="knowledge" className="w-full">
 
       <TextPresentation
         title="My Knowledge"
-         description="Systems Engineering student focused on front-end, 
-         back-end, and machine learning. Passionate about building modern 
-         applications and exploring AI-driven solutions like RAG systems." />
+        description="Systems Engineering student focused on front-end, 
+        back-end, and machine learning. Passionate about building modern 
+        applications and exploring AI-driven solutions like RAG systems."
+      />
 
-      <div className="flex flex-col gap-6 max-w-[970px] mx-auto">
+      <div className="flex flex-col gap-6 mx-auto">
 
-        <div className=" flex flex-col items-center gap-5 md:grid md:grid-cols-3 md:gap-5">
+        <div className="grid gap-5 md:grid-cols-3">
           
           {knowledgeData.map((item) => (
-              <div key={item.title} className="w-full max-w-[310px]">
+            <div key={item.title} className="w-full">
               <Knowledgecard 
-              icon={item.icon} 
-              title={item.title} 
-              desc={item.desc} />
-              </div>
-            
+                icon={item.icon} 
+                title={item.title} 
+                desc={item.desc} 
+              />
+            </div>
           ))}
+
         </div>
       </div>
     </section>

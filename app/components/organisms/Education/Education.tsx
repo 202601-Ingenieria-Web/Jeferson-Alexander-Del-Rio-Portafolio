@@ -28,7 +28,7 @@ const EducationData = [
 
 export function Education() {
   return (
-    <section id="education"  className="   w-full   max-w-[970px]   mx-auto "  >
+    <section id="education"  className="w-full    mx-auto "  >
 
       <TextPresentation
         title="Education"
@@ -37,8 +37,7 @@ export function Education() {
         government-backed bootcamp focused on machine learning and practical applications."
       />
 
-      <div
-        className=" w-full max-w-[904px]  mx-auto  bg-white  flex  flex-col  px-4 sm:px-6 lg:px-8 " >
+      <div  className=" w-full   mx-auto  bg-white  flex  flex-col" >
 
         {EducationData.map((item, index) => (
           <div key={index}>

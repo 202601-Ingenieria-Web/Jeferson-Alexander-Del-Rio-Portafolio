@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Footer } from "./components/organisms/Footer/Footer";
+
+import { Navbar } from "@/app/components/organisms/Navbar/Navbar"
+import { MovilNavbar } from "@/app/components/organisms/Navbar/MovilNavbar"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,11 +27,30 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en" className="scroll-smooth">
+      <body className="font-sans antialiased">
+        <div className="flex min-h-screen flex-col text-foreground">
+         
+          <header className=" hidden lg:block sticky top-0 z-50">       
+            <Navbar />
+          </header>
+
+         
+          <div className="block lg:hidden">
+            <MovilNavbar />
+          </div>
+
+          <main className="flex-1">
+            {children}
+          </main>
+
+         
+        </div>
+
+
+        {process.env.NODE_ENV === "production" }
+      </body>
     </html>
+
   );
 }

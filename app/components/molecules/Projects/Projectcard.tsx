@@ -8,21 +8,26 @@ interface ProjectCardProps {
   href?: string
 }
 
-export function Projectcard({image, title, description, href = "#",}: ProjectCardProps) {
+export function Projectcard({
+  image,
+  title,
+  description,
+  href = "#",
+}: ProjectCardProps) {
   return (
-    <div className="  w-full max-w-[310px] bg-white mx-auto overflow-hidden " >
-      <div className=" relative w-full aspect-[31/30]">
+    <div className="w-full max-w-[310px] bg-white mx-auto overflow-hidden">
       
+      <div className="w-full">
         <Image
-        src="/imagenlarga.png"
-        alt="profile"
-        width={250}
-        height={400}
-        className="w-full h-auto object-contain"
-      />
+          src={image}
+          alt={title}
+          width={310}
+          height={200}
+          className="w-full h-auto object-cover"
+        />
       </div>
 
-      <div className="px-4 sm:px-6 pt-5 sm:pt-6 pb-6">
+      <div className="px-4 sm:px-6 pt-4 pb-6">
         <h3 className="text-[clamp(16px,2.5vw,18px)] font-medium text-[#2B2B2B] leading-tight">
           {title}
         </h3>
